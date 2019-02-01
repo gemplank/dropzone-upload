@@ -1,0 +1,338 @@
+/* --- Body Basic Styling */
+body {
+	width: 100%;
+	position: relative;
+}
+
+/* --- Form Basic Styling */
+form {
+	display: inline-block;
+	max-width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* --- Dropzone Basic Styling */
+.dropzone {
+	width: 100%;
+}
+
+.dropzone__drop-area {
+	position: relative;
+	border-radius: 5px;
+	width: 100%;
+	font-family: sans-serif;
+	padding: 30px 20px;
+	padding: 1.875rem 1.25rem;
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+	background: -webkit-gradient(linear, left top, right top, color-stop(50%, #788C91), color-stop(0%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #788C91), color-stop(0%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, right top, color-stop(50%, #788C91), color-stop(0%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #788C91), color-stop(0%, rgba(255, 255, 255, 0)));
+	background: linear-gradient(to right, #788C91 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(#788C91 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #788C91 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(#788C91 50%, rgba(255, 255, 255, 0) 0%);
+	background-color: #F5F5F5;
+	background-position: top, right, bottom, left;
+	background-repeat: repeat-x, repeat-y;
+	background-size: 10px 1px, 1px 10px;
+}
+
+.dropzone__drop-area svg {
+	display: block;
+	margin: 0 auto;
+	width: 41px;
+	width: 2.5625rem;
+	height: 41px;
+	height: 2.5625rem;
+	fill: #788C91;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+@media screen and (max-width: 1179px) {
+	.dropzone__drop-area .dropzone-content__select-files {
+		height: 1em;
+		opacity: 1;
+	}
+	.dropzone__drop-area .dropzone-content__drop-files-here, .dropzone__drop-area .dropzone-content__or-select-files {
+		height: 0;
+		opacity: 0;
+		margin: 0;
+	}
+}
+
+.dropzone__drop-area:hover, .dropzone__drop-area:active, .dropzone__drop-area:focus {
+	cursor: pointer;
+	background: -webkit-gradient(linear, left top, right top, color-stop(50%, #005F85), color-stop(0%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #005F85), color-stop(0%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, right top, color-stop(50%, #005F85), color-stop(0%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #005F85), color-stop(0%, rgba(255, 255, 255, 0)));
+	background: linear-gradient(to right, #005F85 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(#005F85 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #005F85 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(#005F85 50%, rgba(255, 255, 255, 0) 0%);
+	background-color: rgba(97, 193, 220, 0.15);
+	background-position: top, right, bottom, left;
+	background-repeat: repeat-x, repeat-y;
+	background-size: 10px 1px, 1px 10px;
+}
+
+.dropzone__drop-area:hover .dropzone-content__select-files, .dropzone__drop-area:active .dropzone-content__select-files, .dropzone__drop-area:focus .dropzone-content__select-files {
+	height: 1em;
+	opacity: 1;
+}
+
+.dropzone__drop-area:hover .dropzone-content__drop-files-here, .dropzone__drop-area:hover .dropzone-content__or-select-files, .dropzone__drop-area:active .dropzone-content__drop-files-here, .dropzone__drop-area:active .dropzone-content__or-select-files, .dropzone__drop-area:focus .dropzone-content__drop-files-here, .dropzone__drop-area:focus .dropzone-content__or-select-files {
+	height: 0;
+	opacity: 0;
+	margin: 0;
+}
+
+.dropzone__drop-area:hover svg, .dropzone__drop-area:active svg, .dropzone__drop-area:focus svg {
+	fill: #005F85;
+}
+
+.dropzone__drop-area.dropzone__drop-area--highlight {
+	background: -webkit-gradient(linear, left top, right top, color-stop(50%, #005F85), color-stop(0%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #005F85), color-stop(0%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, right top, color-stop(50%, #005F85), color-stop(0%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #005F85), color-stop(0%, rgba(255, 255, 255, 0)));
+	background: linear-gradient(to right, #005F85 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(#005F85 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, #005F85 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(#005F85 50%, rgba(255, 255, 255, 0) 0%);
+	background-color: rgba(97, 193, 220, 0.15);
+	background-position: top, right, bottom, left;
+	background-repeat: repeat-x, repeat-y;
+	background-size: 10px 1px, 1px 10px;
+}
+
+.dropzone__drop-area.dropzone__drop-area--highlight svg {
+	fill: #005F85;
+}
+
+.dropzone-content {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column;
+	flex-flow: column;
+	min-height: 140px;
+	min-height: 8.75rem;
+}
+
+.dropzone-content__svg {
+	margin-bottom: 15px;
+	margin-bottom: 0.9375rem;
+}
+
+.dropzone-content__select-files {
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 1em;
+	color: #005F85;
+	text-decoration: underline;
+	display: block;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+.dropzone-content__drop-files-here {
+	font-size: 18px;
+	font-size: 1.125rem;
+	color: #788C91;
+	display: block;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+	height: 1em;
+	opacity: 1;
+	margin-bottom: 8px;
+	margin-bottom: 0.5rem;
+}
+
+.dropzone-content__or-select-files {
+	font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.25em;
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	color: #005F85;
+	text-decoration: underline;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+	display: block;
+	transition: all 150ms ease-in-out;
+	height: 1em;
+	opacity: 1;
+}
+
+.dropzone-content__or-select-files > span {
+	line-height: 1em;
+}
+
+.dropzone-content__or-select-files svg {
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+	fill: #005F85;
+	width: 1em;
+	height: 1em;
+}
+
+.dropzone-content__or-select-files svg:first-child {
+	margin-right: 8px;
+}
+
+.dropzone-content__or-select-files svg:last-child {
+	margin-left: 8px;
+}
+
+.dropzone-content__or-select-files:hover, .dropzone-content__or-select-files:active, .dropzone-content__or-select-files:focus {
+	color: #61C1DC;
+	text-decoration: underline;
+}
+
+.dropzone-content__or-select-files:hover svg, .dropzone-content__or-select-files:active svg, .dropzone-content__or-select-files:focus svg {
+	fill: #61C1DC;
+}
+
+.dropzone-content__file-details {
+	font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.25em;
+	font-size: 14px;
+	font-size: 0.875rem;
+	color: #788C91;
+	line-height: 19px;
+	line-height: 1.1875rem;
+	width: 100%;
+}
+
+.dropzone-content__file-details span {
+	display: block;
+	margin-top: 5px;
+	margin-top: 0.3125rem;
+}
+
+.dropzone__fileup {
+	display: none;
+}
+
+.dropzone__attached {
+	display: none;
+	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
+}
+
+.dropzone__attached.dropzone__attached--show {
+	display: block;
+}
+
+.dropzone__preview {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.dropzone__preview-item {
+	position: relative;
+	margin: 0;
+	vertical-align: top;
+	padding: 10px 0;
+	padding: 0.625rem 0;
+	padding-left: 26px;
+	padding-left: 1.625rem;
+	border-bottom: 2px solid #F5F5F5;
+}
+
+.dropzone__preview-item:last-child {
+	border: 0;
+	padding-bottom: 0;
+}
+
+.dropzone__preview-item .dropzone__preview-file {
+	width: 100%;
+	color: #788C91;
+	line-height: 1em;
+	display: block;
+}
+
+.dropzone__preview-item svg {
+	position: absolute;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	fill: #788C91;
+	margin-right: 8px;
+	margin-right: 0.5rem;
+}
+
+.dropzone__attached-clear {
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.25em;
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	color: #005F85;
+	text-decoration: underline;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+	margin-top: 20px;
+	margin-top: 1.25rem;
+}
+
+.dropzone__attached-clear > span {
+	line-height: 1em;
+}
+
+.dropzone__attached-clear svg {
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+	fill: #005F85;
+	width: 1em;
+	height: 1em;
+}
+
+.dropzone__attached-clear svg:first-child {
+	margin-right: 8px;
+}
+
+.dropzone__attached-clear svg:last-child {
+	margin-left: 8px;
+}
+
+.dropzone__attached-clear:hover, .dropzone__attached-clear:active, .dropzone__attached-clear:focus {
+	color: #61C1DC;
+	text-decoration: underline;
+}
+
+.dropzone__attached-clear:hover svg, .dropzone__attached-clear:active svg, .dropzone__attached-clear:focus svg {
+	fill: #61C1DC;
+}
+/* --- END: Dropzone Basic Styling */
