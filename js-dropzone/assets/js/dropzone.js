@@ -149,8 +149,6 @@ function dropzone() {
 
 			attachedCheck();
 
-			console.log(encodedFiles);
-
 			return encodedFiles;
 		}
 
